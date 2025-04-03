@@ -4,4 +4,4 @@ n, m = map(int, input().split())
 
 # здесь продолжите программу
 
-print(math.ceil((n+m)/20))
+print(math.ceil((n + m) / 20))
