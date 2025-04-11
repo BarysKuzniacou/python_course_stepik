@@ -1,4 +1,3 @@
-# put your python code here
 city = input()
 street = input()
 house_number = str(input())

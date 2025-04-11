@@ -1,4 +1,3 @@
-# put your python code here
 import math
 price = float(input())
 price_int = math.trunc(price)

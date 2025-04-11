@@ -1,4 +1,3 @@
-# put your python code here
 string_first = input()
 string_second = input()
 string_first_even = string_first[0::2]

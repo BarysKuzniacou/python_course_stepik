@@ -1,4 +1,3 @@
-# put your python code here
 marks = list(map(int, input().split()))
 marks_sum = sum(marks)
 marks_length = len(marks)

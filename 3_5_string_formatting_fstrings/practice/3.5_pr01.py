@@ -1,4 +1,3 @@
-# put your python code here
 name = input()
 surname = input()
 age = str(input())

@@ -1,4 +1,3 @@
-# put your python code here
 title = input()
 author = input()
 number_of_pages = int(input())

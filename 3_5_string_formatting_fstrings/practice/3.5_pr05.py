@@ -1,4 +1,3 @@
-# put your python code here
 usa_dollar_exchange_rate = float(input())
 rus_rubbles = int(input())
 usa_dollars = int(rus_rubbles/usa_dollar_exchange_rate)

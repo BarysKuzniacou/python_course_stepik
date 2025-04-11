@@ -1,4 +1,3 @@
-# put your python code here
 X, Y = map(int, input().split())
 number_of_blue_pens = X
 number_of_green_pens = Y
