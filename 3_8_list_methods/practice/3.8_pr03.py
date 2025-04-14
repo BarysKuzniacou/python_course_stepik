@@ -16,14 +16,13 @@
 
 #telephoneNumber = '+7(912)123-45-67'
 telephoneNumber = input()
-print(telephoneNumber)
+#print(telephoneNumber)
 telephoneNumber = telephoneNumber.replace("-", "")
-lst = list(telephoneNumber.split())
-print(lst)
+lst = list(telephoneNumber)
+#print(lst)
 
 lst.remove('+')
 indexOf7 = lst.index('7')
 lst[indexOf7] = '8'
-
 
 print("".join(lst))
