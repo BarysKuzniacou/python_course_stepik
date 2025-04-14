@@ -46,6 +46,7 @@ print('abc'.ljust(6, '8'))
 
 print('split')
 print('one two three'.split())
+print('replace')
 s02 = '1, 2,  3,4'
 print(s02.replace(' ', '').split(','))
 

@@ -1,2 +1,2 @@
-text=input()
+text = input()
 print(text.count("-"))
