@@ -60,7 +60,6 @@ print(lst01)
 lst01 = [1, -54, 3, 23, 43, -45, 0]
 
 # создание копии списка
-
 lst02 = lst01.copy()
 print('lst02:', lst02)
 print('lst01 id:', id(lst01))

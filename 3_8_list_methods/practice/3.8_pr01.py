@@ -10,17 +10,12 @@
 # Тесты: https://github.com/selfedu-rus/test-python-base/tree/main/3/3.8.2
 #
 # Sample Input:
-#
 # 8 12 2 -10 6
 # Sample Output:
-#
 # 8 12 2 -10 6 True
-#
 # Sample Input:
-#
 # 8 12 2 0 -10 8
 # Sample Output:
-#
 # 8 12 2 0 -10 8 False
 
 inputValues = map(int, (input().split()))

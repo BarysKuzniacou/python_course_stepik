@@ -7,10 +7,8 @@
 # Тесты: https://github.com/selfedu-rus/test-python-base/tree/main/3/3.8.5
 #
 # Sample Input:
-#
 # Сергей Михайлович Балакирев
 # Sample Output:
-#
 # Балакирев С.М.
 
 firstName, middleName, lastName = map(str, input().split())

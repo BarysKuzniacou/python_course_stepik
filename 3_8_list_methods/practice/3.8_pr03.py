@@ -8,10 +8,8 @@
 # Тесты: https://github.com/selfedu-rus/test-python-base/tree/main/3/3.8.4
 #
 # Sample Input:
-#
 # +7(912)123-45-67
 # Sample Output:
-#
 # 8(912)1234567
 
 #telephoneNumber = '+7(912)123-45-67'
