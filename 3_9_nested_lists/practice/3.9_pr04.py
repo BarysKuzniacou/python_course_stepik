@@ -12,8 +12,19 @@
 # Sample Output:
 # True
 
+# word = "дядя"
+# word = "мама"
+#word = "Балакирев"
+
+word = input()
+
 t = [["Скажи-ка", "дядя", "ведь", "не", "даром"], ["Я", "Python", "выучил", "с", "каналом"], ["Балакирев", "что", "раздавал?"]]
 
-print(t)
+t0 = word in t[0]
+t1 = word in t[1]
+t2 = word in t[2]
 
-# print("дядя" in t[0] OR "дядя" in t[1] OR "дядя" in t[2])
+lst = [t0, t1, t2]
+
+print(True in lst)
+
