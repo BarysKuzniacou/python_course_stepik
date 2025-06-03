@@ -18,19 +18,19 @@
 #
 # green
 
-#time = float(input())
+time = float(input())
 
 #time = 12.5 #green
-time = 14.5 #red
+#time = 14.5 #red
 #time = 11.7 #green
 
-time = int(time)
-print(time)
-print(time % 5)
+#time = int(time)
+#print(time)
+#print(time % 5)
 
-#3 5 8 10 13 15 17 20 22
+#3g 5r 8g 10r 13g 15r 17g 20r 22g
 
-if time % 5 == 0 :
+if time % 5 > 3:
     print('red')
 else:
     print('green')
