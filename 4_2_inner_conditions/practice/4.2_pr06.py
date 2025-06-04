@@ -18,7 +18,7 @@
 
 m, n = map(int, input().split())
 
-if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+if m == 1:
     if 1 < n < 31:
         day_before = n - 1
         day_after = n + 1
@@ -28,24 +28,26 @@ if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
         day_after = 1
         print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
     else:
-
+        month_before = 12
+        month_after = 1
+        day_before = 31
+        day_after = 2
+        print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
 elif m == 2:
     if 1 < n < 28:
         day_before = n - 1
         day_after = n + 1
         print(f'{m:02}.{day_before:02}' + ' ' + f'{m:02}.{day_after:02}')
-    else:
+    elif n == 28:
         day_before = 27
         day_after = 1
         print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
-else:
-    if n < 30:
-        day_before = n - 1
-        day_after = n + 1
-        print(f'{m:02}.{day_before:02}' + ' ' + f'{m:02}.{day_after:02}')
     else:
-        day_before = 29
-        day_after = 1
-        print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
+        month_before = 1
+        month_after = 2
+        day_before = 31
+        day_after = 2
+        print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
+
 
 
