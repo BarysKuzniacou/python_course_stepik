@@ -82,6 +82,136 @@ elif m == 4:
         day_before = 31
         day_after = 2
         print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
+#---05---
+elif m == 5:
+    if 1 < n < 31:
+        day_before = n - 1
+        day_after = n + 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{m:02}.{day_after:02}')
+    elif n == 31:
+        day_before = 30
+        day_after = 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
+    else:
+        month_before = 4
+        month_after = 5
+        day_before = 30
+        day_after = 2
+        print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
+#---06---
+elif m == 6:
+    if 1 < n < 30:
+        day_before = n - 1
+        day_after = n + 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{m:02}.{day_after:02}')
+    elif n == 30:
+        day_before = 29
+        day_after = 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
+    else:
+        month_before = 5
+        month_after = 6
+        day_before = 31
+        day_after = 2
+        print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
+#---07---
+elif m == 7:
+    if 1 < n < 31:
+        day_before = n - 1
+        day_after = n + 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{m:02}.{day_after:02}')
+    elif n == 31:
+        day_before = 30
+        day_after = 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
+    else:
+        month_before = 6
+        month_after = 7
+        day_before = 30
+        day_after = 2
+        print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
+#---08---
+elif m == 8:
+    if 1 < n < 31:
+        day_before = n - 1
+        day_after = n + 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{m:02}.{day_after:02}')
+    elif n == 31:
+        day_before = 30
+        day_after = 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
+    else:
+        month_before = 7
+        month_after = 8
+        day_before = 31
+        day_after = 2
+        print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
+#---09---
+elif m == 9:
+    if 1 < n < 30:
+        day_before = n - 1
+        day_after = n + 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{m:02}.{day_after:02}')
+    elif n == 30:
+        day_before = 29
+        day_after = 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
+    else:
+        month_before = 8
+        month_after = 9
+        day_before = 31
+        day_after = 2
+        print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
+#---10---
+elif m == 10:
+    if 1 < n < 31:
+        day_before = n - 1
+        day_after = n + 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{m:02}.{day_after:02}')
+    elif n == 31:
+        day_before = 30
+        day_after = 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
+    else:
+        month_before = 9
+        month_after = 10
+        day_before = 30
+        day_after = 2
+        print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
+#---11---
+elif m == 11:
+    if 1 < n < 30:
+        day_before = n - 1
+        day_after = n + 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{m:02}.{day_after:02}')
+    elif n == 30:
+        day_before = 29
+        day_after = 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
+    else:
+        month_before = 10
+        month_after = 11
+        day_before = 31
+        day_after = 2
+        print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
+#---12---
+elif m == 11:
+    if 1 < n < 31:
+        day_before = n - 1
+        day_after = n + 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{m:02}.{day_after:02}')
+    elif n == 31:
+        month_before = 12
+        month_after = 1
+        day_before = 30
+        day_after = 1
+        print(f'{m:02}.{day_before:02}' + ' ' + f'{(m + 1):02}.{day_after:02}')
+    else:
+        month_before = 11
+        month_after = 12
+        day_before = 30
+        day_after = 2
+        print(f'{month_before:02}.{day_before:02}' + ' ' + f'{month_after:02}.{day_after:02}')
 
 
 
