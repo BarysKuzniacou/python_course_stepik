@@ -19,12 +19,15 @@ n = int(input())
 
 lst = []
 
-i = 1
+lst.append(1)
+lst.append(1)
+
+i = 2
 
 while i < n:
-    if (i == 1):
-        lst[0] = 1
-    else:
-        lst[i] = len[i-1]
+    lst.append(lst[i-1] + lst[i-2])
+    i +=1
+
+print(*lst)
 
 
