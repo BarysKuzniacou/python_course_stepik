@@ -19,3 +19,19 @@
 # 9
 # Sample Output:
 # 0 1 1 0 0 1 0 1 0 1
+
+p = [0] * 10
+
+sum = 0
+
+while sum < 5:
+    index = int(input())
+
+    if p[index] != 1:
+        p[index] = 1
+        sum += 1
+    else:
+        continue
+
+print(*p)
+
