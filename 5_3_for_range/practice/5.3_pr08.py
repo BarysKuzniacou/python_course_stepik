@@ -8,7 +8,6 @@
 # 11
 # Sample Output:
 # ДА
-from sys import flags
 
 n = int(input())
 
