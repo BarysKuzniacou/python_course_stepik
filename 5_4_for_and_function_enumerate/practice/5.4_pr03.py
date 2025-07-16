@@ -21,51 +21,57 @@ from sys import prefix
 # Sample Output:
 # 23
 
-#math_expr = input().replace(" ", "")
-math_expr = '10+25 - 12'.replace(" ", "")
+# удаление всех пробелов при вводе данных
+math_expr_enter = input().replace(" ", "")
+#math_expr_enter = '-4 - 5 + 10'.replace(" ", "")
 
-# находим все знаки +/-
-lst_oper = []
+# нахождение всех знаков +/- и запись их в список
+lst_sign = []
 
-for i, d in enumerate(math_expr):
+for i, d in enumerate(math_expr_enter):
     if d == '+':
-        lst_oper.append(1)
+        lst_sign.append(1)
     elif d == '-':
-        lst_oper.append(-1)
+        lst_sign.append(-1)
 
-print(lst_oper)
-
-# определяем есть ли знак - у первого числа
-
+# определение знака "-" у первого числа
 first_sign_minus = False
 
-if math_expr[0] == '-':
+if math_expr_enter[0] == '-':
     first_sign_minus = True
 
-math_expr_1 = math_expr.replace("+", " ")
-math_expr_2 = math_expr_1.replace("-", " ")
+# замена всех плюсов на пробелы
+math_expr_without_plus = math_expr_enter.replace("+", " ")
 
-print(math_expr_2)
+# замена всех минусов на пробелы
+math_expr_without_minus = math_expr_without_plus.replace("-", " ")
 
-numbers_lst = int(math_expr_2.split())
+# удаление первого пробела, если первое значение со знаком минус
+math_exp = math_expr_without_minus.rstrip()
 
-print(numbers_lst)
+# запись всех значений чисел в список
+numbers_lst = []
+numbers_lst = list(map(int, math_exp.split()))
 
-sum = 0
-
-lst = []
+# присвоение знаков значениям
+lst_number_with_signs = []
 
 if first_sign_minus:
-    for i, d in enumerate(math_expr_2):
-        lst[i] = int(math_expr_2[i]) * lst_oper[i]
+    for i, d in enumerate(numbers_lst):
+        lst_number_with_signs.append(d * lst_sign[i])
 else:
-    for j in len(math_expr_2):
-        if j == 0:
-            lst[j] = int(math_expr_2[j])
-        else:
-            lst[i] = int(math_expr_2[i]) * lst_oper[i-1]
+    lst_number_with_signs.append(numbers_lst[0])
+    for i in range(len(lst_sign)):
+        lst_number_with_signs.append(numbers_lst[i+1] * lst_sign[i])
 
-print(lst)
+# подсчет суммы чисел
+sum = 0
+
+for i, d in enumerate(lst_number_with_signs):
+    sum += d
+
+print(sum)
+
 
 
 
