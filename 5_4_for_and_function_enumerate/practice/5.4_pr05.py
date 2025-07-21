@@ -4,8 +4,20 @@
 # после дублирования должны получить:
 # [1, 1, 2, 2, 3, 3]
 # Результат (список) выведите на экран в виде последовательности чисел, записанных через пробел.
+#
 # Тесты: https://github.com/selfedu-rus/test-python-base/tree/main/5/5.4.5
+#
 # Sample Input:
 # 8 11 2
 # Sample Output:
 # 8 8 11 11 2 2
+
+lst_input = list(map(int, input().split()))
+
+lst_result = []
+
+for i, d in enumerate(lst_input):
+    lst_result.append(d)
+    lst_result.append(d)
+
+print(*lst_result)
