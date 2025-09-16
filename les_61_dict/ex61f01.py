@@ -1,5 +1,3 @@
-from pandas.core.interchange.from_dataframe import primitive_column_to_ndarray
-
 d = {'house': 'дом', 'car' : 'машина', 'tree': 'дерево', 'road': 'дорого', 'iver': 'река'}
 print(d) # {'house': 'дом', 'car': 'машина', 'tree': 'дерево', 'road': 'дорого', 'iver': 'река'}
 
