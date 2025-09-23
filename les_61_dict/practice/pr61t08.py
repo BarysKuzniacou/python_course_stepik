@@ -35,3 +35,17 @@
 # HTML-страница для адреса peremennyye-operator-prisvaivaniya-tipy-dannykh
 # HTML-страница для адреса arifmeticheskiye-operatsii
 # Взято из кэша: HTML-страница для адреса ustanovka-i-poryadok-raboty-pycharm
+
+lst_in = ['ustanovka-i-zapusk-yazyka', 'ustanovka-i-poryadok-raboty-pycharm',
+          'peremennyye-operator-prisvaivaniya-tipy-dannykh', 'arifmeticheskiye-operatsii',
+          'ustanovka-i-poryadok-raboty-pycharm']
+
+d ={}
+
+for key in lst_in:
+    if key in d:
+        print(f'Взято из кэша: HTML-страница для адреса {d[key]}')
+    else:
+        d[key] = key
+        print(f'HTML-страница для адреса {d[key]}')
+
