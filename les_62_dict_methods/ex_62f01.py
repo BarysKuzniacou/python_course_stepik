@@ -1,6 +1,3 @@
-# jghtltktybt rk.xtq ckjdfhz
-from collections.abc import dict_keys
-
 lst = ['+7', '+6', '+5', '+4']
 d = dict.fromkeys(lst) # ключи словаря
 print(d) # {'+7': None, '+6': None, '+5': None, '+4': None}
