@@ -11,3 +11,11 @@
 # 8 11 -4 5 2 11 4 8
 # Sample Output:
 # 8 11 -4 5 2 4
+
+lst = list(map(int, input().split()))
+
+d = dict.fromkeys(lst)
+
+uniq_values = d.keys()
+
+print(*uniq_values)
