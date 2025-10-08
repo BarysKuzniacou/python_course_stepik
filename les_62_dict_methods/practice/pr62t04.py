@@ -36,10 +36,24 @@
 
 lst_in = ['3 Сергей', '5 Николай', '4 Елена', '7 Владимир', '5 Юлия', '4 Светлана']
 
-lst_for_dict = [x.split() for x in lst_in]
+d = {}
 
-print(lst_for_dict)
+for x in lst_in:
+    key, value = x.split()
+    if key not in d:
+        d[key] = []
+    d[key].append(value)
 
-d = dict(lst_for_dict)
+for key, value in d.items():
+    items_string = ", ".join(value)
+    print(f'{int(key)}: {items_string}')
 
-print(d)
+# d = {}
+#
+# for i in lst_in:
+#     key, value = i.split()
+#     d[key] = d.get(key, []) + [value]
+#
+# for key, value in d.items():
+#     print(f'{key}: ', end='')
+#     print(*value, sep=', ')
