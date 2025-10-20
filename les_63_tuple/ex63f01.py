@@ -61,4 +61,7 @@ print(a) # (1, 6, 7, ('a', 'hello'))
 
 a = (0,) * 10
 print(a) # (0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-# 12-21 https://stepik.org/lesson/567048/step/1?auth=login&unit=561322
+a = ('hello', 'world')
+a = a * 5
+print(a)
+# 13-06 https://stepik.org/lesson/567048/step/1?auth=login&unit=561322
