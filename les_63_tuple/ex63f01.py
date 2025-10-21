@@ -64,4 +64,42 @@ print(a) # (0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 a = ('hello', 'world')
 a = a * 5
 print(a)
-# 13-06 https://stepik.org/lesson/567048/step/1?auth=login&unit=561322
+
+a = tuple([1, 2, 3])
+print(a) # (1, 2, 3)
+
+a = tuple('hello')
+print(a) # ('h', 'e', 'l', 'l', 'o')
+
+# преобразование кортежа в список
+t = (1, 2, 3)
+print(t) # (1, 2, 3)
+lst = list(t)
+print(lst) # [1, 2, 3]
+
+# ссылку менять нельзя, но значения по ссылке менять можно, если она не приведет к 
+# созданию нового объекта
+a = (True, [1, 2, 3], 'hello', 5, {'house': 'дом'})
+print(a) # (True, [1, 2, 3], 'hello', 5, {'house': 'дом'})
+print(a[1]) # [1, 2, 3]
+a[1].append('5')
+print(a) # (True, [1, 2, 3, '5'], 'hello', 5, {'house': 'дом'})
+
+# toupe.count(значение) - возвращает число найденных элементов с указанным значением
+a = ('abc', 2, [1, 2], True, 2, 5)
+print(a.count('abc')) # 1
+print(a.count(2)) # 2
+print(a.count('hello')) # 0
+
+# touple.index(значение[, start[,stop]]) - возвращает индекс первого найденного 
+# элемента с указанным значением (start и stop - необязательные параметры, индексы 
+# начала и конца поиска)
+print(a.index('abc')) # 0
+print(a.index(2)) # 1
+print(a.index(2, 2)) # 4
+# print(a.index(2, 2, 3)) # ошибка
+# print(a.index('hello')) # ошибка
+
+# in - поиск значения в кортеже
+print(3 in a) # False
+print([1, 2] in a) # True
