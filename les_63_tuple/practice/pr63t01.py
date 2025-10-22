@@ -17,8 +17,6 @@ t = (3.4, -56.7)
 
 lst = list(map(int, input().split()))
 
-print(lst)
-
 touple_from_lst = tuple(lst)
 
 t = t + touple_from_lst

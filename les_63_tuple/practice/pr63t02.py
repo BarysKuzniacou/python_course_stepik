@@ -17,3 +17,11 @@ if ('Москва' not in t):
     t += ('Москва',)
   
 print(*t)
+
+# t = tuple(input().split())
+# t = t + ('Москва',) if 'Москва' not in t else t
+# print(*t)
+
+# t = (3.4, -56.7) 
+# t += tuple(map(int, input().split()))
+# print(t)
