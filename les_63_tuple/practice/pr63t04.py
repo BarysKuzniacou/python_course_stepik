@@ -3,7 +3,9 @@
 # Затем, отобразите на экране все имена малыми буквами из этого кортежа (по порядку), 
 # которые содержат фрагмент "ва" (без учета регистра). Имена выводятся в одну 
 # строчку через пробел в нижнем регистре (малыми буквами).
+
 # Тесты: https://github.com/selfedu-rus/test-python-base/tree/main/6/6.3.6
+
 # Sample Input:
 # Петя Варвара Венера Василиса Василий Федор
 # Sample Output:
@@ -14,4 +16,7 @@ t = tuple(input().split())
 for i in range(len(t)):
     name = str(t[i]).lower()
     if 'ва' in name:
-        print(name, end='')
+        print(name, end=' ')
+
+# t = tuple(input().lower().split())
+# print(*(x for x in t if 'ва' in x))

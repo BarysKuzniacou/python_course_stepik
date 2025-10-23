@@ -6,6 +6,7 @@
 # в одну строчку через пробел.
 
 # Тесты: https://github.com/selfedu-rus/test-python-base/tree/main/6/6.3.4
+
 # Sample Input:
 # Уфа Казань Самара
 # Sample Output:
