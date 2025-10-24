@@ -28,3 +28,12 @@ for i in range(len(t)):
         print(t.index(t[i]), end = ' ')
     elif int(t[i]) in t[i+1:] or int(t[i]) in t[:i]:
         print(t.index(t[i], i), end = ' ')
+
+# t = tuple(input().split())
+# repeat_values = tuple(i for i, v in enumerate(t) if t.count(v) > 1)
+# print(*repeat_values)
+
+# tup = tuple(input().split())
+# for i, x in enumerate(tup):
+#     if tup.count(x) > 1:
+#         print(i, end=' ')
