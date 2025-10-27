@@ -28,9 +28,14 @@ t = ((1, 0, 0, 0, 0),
 
 N = int(input())
 
-t2 = tuple(((0,),) * N)
+t2 = tuple([] * N)
 
 for i in range(N):
-    t2[i] += t[i][:N]
+    t2 += tuple([t[i][:N]])
     
-print(t2)
+for i in range(len(t2)):
+    print(*t2[i])
+
+# t2 = tuple(t[i][:n] for i in range(n))
+# for row in t2:
+#     print(*row)
