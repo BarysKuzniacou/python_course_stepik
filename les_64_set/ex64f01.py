@@ -73,4 +73,4 @@ print(a.pop()) # 1
 print(a) # {2, 3, 4, 'd', 'c', 'a', 'b'}
 # clear - удаление всех элементов из множества
 a.clear()
-print(a)
+print(a) # set()
