@@ -30,3 +30,7 @@ while (city != 'q'):
     city = input()
 
 print(len(s))
+
+# print(len(set(i for i in iter(input, 'q'))))
+
+# print(len(set(iter(input, 'q'))))
