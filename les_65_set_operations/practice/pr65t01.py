@@ -6,8 +6,7 @@
 # (здесь s - это множество, содержащее уникальные числа):
 
 # print(*sorted(s))
-
-                  
+               
 # P. S. О функции sorted мы еще будем говорить, а также об операторе *. Пока просто запомните такую возможность сортировки и вывода произвольных коллекций на экран.
 
 # Тесты: https://github.com/selfedu-rus/test-python-base/tree/main/6/6.5.1
@@ -22,4 +21,5 @@ setA = set(map(int, input().split()))
 setB = set(map(int, input().split()))
 
 s = setA & setB
+
 print(*sorted(s))

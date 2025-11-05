@@ -22,4 +22,5 @@ setB = set(map(int, input().split()))
 set_uniqA = setA - setB
 set_uniqB = setB - setA
 s = set_uniqA | set_uniqB
+
 print(*sorted(s))
