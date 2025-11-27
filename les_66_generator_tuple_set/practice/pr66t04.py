@@ -28,3 +28,6 @@ if ('и' in s):
 else:
     print(0)
 
+# lst = input().lower().split()
+# d = {i: lst.count(i) for i in lst}
+# print(d.get('и',0))
