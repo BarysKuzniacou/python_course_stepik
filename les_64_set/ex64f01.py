@@ -47,11 +47,11 @@ print('York' in set_cities) # False
 # добавление элемента во множество
 # add
 a = set()
-a. add(1)
+a.add(1)
 print(a) # {1}
-a. add(1)
+a.add(1)
 print(a) # {1}
-a. add(2)
+a.add(2)
 print(a) # {1, 2}
 # update
 a.update([3, 4, 'hello'])

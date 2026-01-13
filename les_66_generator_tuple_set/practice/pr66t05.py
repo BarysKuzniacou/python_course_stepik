@@ -28,3 +28,14 @@ lst_in = ['Пушкин: Сказка о рыбаке и рыбке', 'Есен�
 
 lst = [i.split(': ') for i in lst_in]
 
+lst_author = [lst[i][0] for i in range(len(lst))]
+
+# for i in range(len(lst)):
+#     print(lst[i][0])
+#     lst_author.append(lst[i][0])
+
+d = dict.fromkeys(lst_author)
+
+print(d)
+
+

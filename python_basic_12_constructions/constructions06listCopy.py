@@ -4,5 +4,5 @@ another_numbers = numbers[:]
 
 another_numbers.append(200)
 
-print(numbers) #
-print(another_numbers) #
+print(numbers) # [1, 2, 3]
+print(another_numbers) # [1, 2, 3, 200]
