@@ -26,16 +26,15 @@
 
 lst_in = ['Пушкин: Сказка о рыбаке и рыбке', 'Есенин: Письмо к женщине', 'Тургенев: Муму', 'Пушкин: Евгений Онегин', 'Есенин: Русь']
 
-lst = [i.split(': ') for i in lst_in]
+lst = [i.split(': ') for i in lst_in] # разделение автора от произведения по двоеточию
 
-lst_author = [lst[i][0] for i in range(len(lst))]
+lst_author = [lst[i][0] for i in range(len(lst))] # формирование списка авторов произведений
 
-# for i in range(len(lst)):
-#     print(lst[i][0])
-#     lst_author.append(lst[i][0])
+lst_uniq_lst_author = list(set(lst_author)) # выборка уникальных значений - авторов
 
-d = dict.fromkeys(lst_author)
+d = dict()
+
+for author in lst_uniq_lst_author:
+    d[author] = set([lst[i][1] for i in range(len(lst)) if lst[i][0] == author])
 
 print(d)
-
-
