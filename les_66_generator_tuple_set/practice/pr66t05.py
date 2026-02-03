@@ -38,3 +38,8 @@ for author in lst_uniq_lst_author:
     d[author] = set([lst[i][1] for i in range(len(lst)) if lst[i][0] == author])
 
 print(d)
+
+# d = {}
+# for line in lst_in:
+#     name, book = line.split(': ')
+#     d.setdefault(name, set()).add(book)
