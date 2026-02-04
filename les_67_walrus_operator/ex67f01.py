@@ -7,5 +7,5 @@ if d := int(input('введите число: ')):
 if d := int(input('введите число (5): ')) > 0: # True
     print(d)
 
-if (d := int(input('введите число (5): '))) > 0: # True
+if (d := int(input('введите число (5): '))) > 0: # 5
     print(d)
