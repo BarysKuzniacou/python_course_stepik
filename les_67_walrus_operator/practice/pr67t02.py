@@ -7,6 +7,12 @@
 sum = 0
 
 while (var := int(input())) != 0:
-    sum += var
+    if var % 2 == 0:
+        sum += var
 
 print(sum)
+
+# total = 0
+# while x:=int(input()):
+#     total += x * (not x % 2)
+# print(total)
