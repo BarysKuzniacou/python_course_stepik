@@ -24,3 +24,31 @@ def check_email(email):
 
 email_input = input().lower()
 check_email(email_input)
+
+#---1
+# def check_mail(mail):
+#     allow = set("abcdefghijklmnopqrstuvwxyz0123456789_@.")
+#     nesessary = {"@", "."}
+#     print("ДА") if nesessary <= mail <= allow else print("НЕТ")
+
+
+# msg = set(input().lower())
+# check_mail(msg)
+
+#---2
+# def foo(email):
+#     print("ДА" if '@' in email and '.' in email and set(email) <= t else "НЕТ" )
+
+
+# foo(input())
+
+#---3
+# import re 
+
+
+# def check_email(email):
+#     regex = r'[A-Za-z0-9_]+@[A-Za-z0-9]+\.[A-Z|a-z]{2,}'
+#     print('ДА' if re.fullmatch(regex, email) else 'НЕТ')
+    
+   
+# check_email(input())
