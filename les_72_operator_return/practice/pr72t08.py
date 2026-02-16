@@ -36,3 +36,16 @@ for city in cities:
 a = sorted(d, key=d.get)
 
 print(*a)
+
+# def twix(w):
+#     return w, len(w)
+# d = {k:v for k, v in map(twix, input().split())}
+# a = sorted(d, key=lambda x: d[x])
+# print(*a)
+
+# def twix(w):
+#     return w, len(w)
+
+# d = dict(map(twix, input().split()))
+# a = sorted(d, key=d.get)
+# print(*a)
