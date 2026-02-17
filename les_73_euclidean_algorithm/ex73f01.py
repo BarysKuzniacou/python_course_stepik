@@ -25,7 +25,8 @@ def get_min_equal_divider_new(a, b):
     while b != 0:
         a, b = b, a % b
     
-    
+    print(a)
+
     return a
 
 
@@ -66,6 +67,20 @@ def test_min_equal_divider(func):
         print('test 3 - ok')
     else:
         print('test 3 - fail')
+
+    # test 4
+    a = 18
+    b = 12
+    
+    st = time.time()
+    res = func(a, b)
+    et = time.time()
+    dt = et - st
+
+    if res == 2 and dt < 1:
+        print('test 4 - ok')
+    else:
+        print('test 4 - fail')
 
 # res = get_min_equal_divider(18, 24)
 # print(res)
