@@ -17,7 +17,7 @@ def get_min_equal_divider(a, b):
     return a
 
 
-def get_min_equal_divider_new(a, b):
+def get_max_equal_divider_new(a, b):
 
     if a < b:
         a, b = b, a
@@ -31,7 +31,7 @@ def get_min_equal_divider_new(a, b):
 
 
 
-def test_min_equal_divider(func):
+def test_max_equal_divider(func):
     # test 1
     a = 28
     b = 35
@@ -82,10 +82,10 @@ def test_min_equal_divider(func):
     else:
         print('test 4 - fail')
 
-# res = get_min_equal_divider(18, 24)
+# res = get_max_equal_divider(18, 24)
 # print(res)
-# help(get_min_equal_divider)
+# help(get_max_equal_divider)
 
-#test_min_equal_divider(get_min_equal_divider)
+#test_max_equal_divider(get_max_equal_divider)
 
-test_min_equal_divider(get_min_equal_divider_new)
+test_max_equal_divider(get_max_equal_divider_new)
