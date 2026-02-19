@@ -64,12 +64,12 @@ def get_latin(str, sep='-'):
         else:
             res += c
     
-    print(res)
+    return res
 
 
 str_input = input()
 
-get_latin(str_input)
-get_latin(str_input, '+')
+print(get_latin(str_input))
+print(get_latin(str_input, '+'))
 
 
