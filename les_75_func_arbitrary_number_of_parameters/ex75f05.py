@@ -11,4 +11,4 @@ def os_path(disk , *args, sep='\\', **kwargs):
 print(os_path('F:\\', '         ~stepik.org', 
               'Добрый, добрый Python (Питон)         ', 
               '39\\p39. Функции.docx',
-              trim=False))
+              trim=True))
