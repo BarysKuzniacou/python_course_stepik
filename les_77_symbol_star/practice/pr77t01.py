@@ -63,12 +63,12 @@ def most_popular(people, *, case_sens=False):
     return popular
 
 
-#writers = input().split()
+writers = input().split()
 
 # здесь продолжайте программу
 
-#writers = list(writers)
-writers = ['Толстой', 'Балакирев', 'Пушкин', 'Бердяев', 'Балакирев', 'Пушкин', 'Толстой', 'пушкин']
+writers = list(writers)
+# writers = ['Толстой', 'Балакирев', 'Пушкин', 'Бердяев', 'Балакирев', 'Пушкин', 'Толстой', 'пушкин']
 
-result = most_popular(writers, case_sens=True)
+result = most_popular(writers)
 print(result) # убрать
