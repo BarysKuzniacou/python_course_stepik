@@ -70,5 +70,5 @@ writers = input().split()
 writers = list(writers)
 # writers = ['Толстой', 'Балакирев', 'Пушкин', 'Бердяев', 'Балакирев', 'Пушкин', 'Толстой', 'пушкин']
 
-result = most_popular(writers)
+result = most_popular(writers, case_sens=True)
 print(result) # убрать
