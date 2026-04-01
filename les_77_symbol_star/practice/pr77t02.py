@@ -54,6 +54,8 @@ def count_chars(s, chars, *, return_type=tuple, ignore_case=True):
     
     if return_type == tuple:
          res = tuple(res)
+    elif return_type == set:
+         res = set(res)
 
     return res
 
