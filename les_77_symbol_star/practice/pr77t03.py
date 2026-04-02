@@ -35,20 +35,29 @@
 
 def merge_dicts(dict1, *args, ignored_keys=None):
 
-    dict_args = {}
+    dict_res = {}
 
-    for d in args:
-        dict_args |= d
+    for d in (dict1, *args):
+        for key, value in d.items():
+            if key and ignored_keys in ignored_keys:
+                continue
+            else:
+                dict_res[key] = value
 
-    dict_res = {**dict1, **dict_args}
+    # dict_args = {}
 
-    dict_res_copy = dict_res.copy()
+    # for d in args:
+    #     dict_args |= d
 
-    if ignored_keys != None:
-        for key, value in dict_res_copy.items():
-            for x in ignored_keys:
-                if key == x:
-                    dict_res.pop(x, '')
+    # dict_res = {**dict1, **dict_args}
+
+    # dict_res_copy = dict_res.copy()
+
+    # if ignored_keys != None:
+    #     for key, value in dict_res_copy.items():
+    #         for x in ignored_keys:
+    #             if key == x:
+    #                 dict_res.pop(x, '')
 
     return dict_res
 
@@ -62,3 +71,17 @@ songs = merge_dicts(d1, d2, d3, ignored_keys=('id',))
 print(songs)
 
 # goods = merge_dicts(goods1, goods2, goods3, goods4, ignored_keys=('id','date', 'cat_id'))
+
+# def merge_dicts(dict1, *args, ignored_keys=None):
+#     d = {}
+#     for dict_x in (dict1, *args):
+#         for key, value in dict_x.items():
+#             if ignored_keys and key in ignored_keys:
+#                 continue
+
+#             d[key] = value
+
+#     return d
+
+
+# goods = merge_dicts(goods1, goods2, goods3, goods4, ignored_keys=('id', 'date', 'cat_id'))
