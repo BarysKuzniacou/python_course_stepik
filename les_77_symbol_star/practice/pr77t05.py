@@ -34,35 +34,35 @@
 
 # P.S. На экран ничего выводить не нужно.
 
-def are_anagrams(*args, start=0, end=-1, ignore_case=True,):
-    s1 = args[0][0]
-    s2 = args[0][1]
-    
+def are_anagrams(*args, start=0, end=-1, ignore_case=True):
+    # определяем тип данных args и записываем данные в переменные
+    if len(args) == 1 and isinstance(args[0], list): 
+        s1 = args[0][0]
+        s2 = args[0][1]
+    else:
+        ar = list(args)
+        s1 = ar[0]
+        s2 = ar[1]
+
+    # проверка длины строк с определением end
     if end == -1:
-        end = len(s1)
+        if len(s1) != len(s2):
+            return False
+        else:
+            end = len(s1)
     
+    # задаем сверяемые части строк
     s1 = s1[:end]
     s2 = s2[:end]
     
+    # учет регистра
     if ignore_case == True:
         s1 = s1.lower()
         s2 = s2.lower()
     
-    if s1 in s2:
+    if set(s1) != set(s2):
         return False
     
-    if len(s1[start:end]) != len(s2[start:end]):
-        return False
-    
-    # s1 = list(s1)
-    # s2 = list(s2)
-
-    for i in range(start, end):
-        if s1[i] in s2:
-            x = s1[i]
-            s2 = s2.replace(x, "")
-        else:
-            return False
     
     return True
 
@@ -75,8 +75,13 @@ def are_anagrams(*args, start=0, end=-1, ignore_case=True,):
 
 words = 'КОТТИК тикток'.split()
 
+# result = are_anagrams(words, ignore_case=False)
 result = are_anagrams(words, ignore_case=False)
 
-words = 'ШОК кошель'.split()
+# words = 'ШОК кошель'.split()
 
-result = are_anagrams(words, end=3)
+# result = are_anagrams('ШОК', 'кошель', end=3)
+
+words = ['китток', 'тикток']
+
+result = are_anagrams(words)
