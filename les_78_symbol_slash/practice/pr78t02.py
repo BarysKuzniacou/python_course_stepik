@@ -36,21 +36,20 @@
 # здесь объявляйте функцию
 def verify_password(psw, /, chars="@#!*", min_length=8 ):
     c_rus = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"
-    special_symbol = False
+    requirement_len = True
+    requirement_rus = True
+    requirement_special_symbol = False
 
     if len(psw) < min_length:
-        return False
+        requirement_len = False
     
     for c in psw:
         if c.lower() in c_rus:
-            return False
+            requirement_rus = False
         if c in chars:
-            special_symbol = True
+            requirement_special_symbol = True
     
-    if special_symbol:
-        return True
-    else:
-        return False
+    return requirement_len and requirement_rus and requirement_special_symbol
 
 
 # password = input()
