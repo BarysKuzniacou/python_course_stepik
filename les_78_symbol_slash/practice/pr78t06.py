@@ -33,3 +33,25 @@
 # При реализации функции is_right_rect следует использовать только текущие знания без применения каких-либо внешних библиотек.
 
 # P.S. На экран ничего выводить не нужно.
+
+
+
+# здесь объявляйте функцию
+def is_right_rect(a, b, c, d, /, *, precision=0.001):
+    d1 = (((a[0] - c[0]) ** 2) + ((a[1] - c[1]) ** 2)) ** 0.5
+    d2 = (((b[0] - d[0]) ** 2) + ((b[1] - d[1]) ** 2)) ** 0.5
+
+    if abs(d1 - d2) < precision:
+        return True
+    
+    return False
+
+
+rect_coords = [(float(x.split('=')[0]), float(x.split('=')[1])) for x in input().split()]
+
+# здесь продолжайте программу
+# result = is_right_rect((3, 1), (6, 7), (10, 5), (7, -1))
+
+result = is_right_rect(rect_coords[0], rect_coords[1], rect_coords[2], rect_coords[3])
+
+print(result)
