@@ -2,13 +2,13 @@ N = 100
 
 def my_func_1():
     N = 20
-    print(N)
+    print('func 1', N)
 
 
 def my_func_2():
     global N
     N = 200
-    print(N)
+    print('func 2', N)
 
 
 print(N)
