@@ -16,7 +16,6 @@ s = 'house=дом car=машина men=человек tree=дерево'
 s_lst = s.split()
 
 # здесь продолжайте программу
-
 tp = tuple(map(lambda i: tuple(i.split('=')), s_lst))
 
 print(tp)
