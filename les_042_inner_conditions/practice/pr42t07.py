@@ -22,4 +22,3 @@ else:
         print('II четверть')
     else:
         print('III четверть')
-
