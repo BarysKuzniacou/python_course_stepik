@@ -34,3 +34,7 @@ for i, d in enumerate(lst2D):
         lst.append(d)
     else:
         lst.append(d[::-1])
+
+for i in range(len(lst)):
+    for j in range(len(lst[i])):
+        print(lst[i][j], end=' ')
